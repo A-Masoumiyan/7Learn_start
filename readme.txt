@@ -1,1 +1,3 @@
 hello world
+
+lang = fa
