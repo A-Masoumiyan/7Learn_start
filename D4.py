@@ -20,4 +20,5 @@ def find_common_prefix(words_list):
     return tmp
 
 
+
 print(find_common_prefix(words))
