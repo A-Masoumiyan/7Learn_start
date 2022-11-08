@@ -8,3 +8,11 @@ def announce(name, age, scores):
         if score >= 12:
             passed += 1
     return f'{name} ({age}), passed {passed} courses.'
+
+
+teams = [
+    {'name': 'perspolice', 'result': 'wldllwddwwlwwllwwdldwwwd'},
+    {'name': 'esteghlal', 'result': 'wlwwlddllwlwdlwdwwddlddl'},
+    {'name': 'sepahan', 'result': 'ddwllddlwwlwwlwddllldddd'},
+    {'name': 'tractor', 'result': 'wlwlllldllddddlwwwdldwww'},
+]
