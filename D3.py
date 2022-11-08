@@ -22,7 +22,7 @@ def calculate_score(team):
 
 tmp_score_board = list(map(pars_result, teams))
 
-score_board = map(calculate_score, tmp_score_board)
+score_board = list(map(calculate_score, tmp_score_board))
 
 
 def check_score(team):
@@ -31,6 +31,11 @@ def check_score(team):
 
 # passed_teams = filter(check_score, score_board)
 passed_teams = list(filter(lambda t: t['score'] >= 30, score_board))
+#
+# for team in passed_teams:
+#     print(team)
 
-for team in passed_teams:
-    print(team)
+score_board = sorted(score_board, key=lambda x: x['score'], reverse=True)
+
+for index, team in enumerate(score_board):
+    print(index + 1, team)
